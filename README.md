@@ -52,18 +52,20 @@ Logo abaixo estão descritas as rotas da API.
 ##### Solicitação bem sucedida.
 
 ```yaml
-    {
-        "user": {
-            "id": "65das4dqwdqw84.qweoasd5412",
-            "name": "Nomo do usuário",
-            "email": "email@usuario.com",
-        },
-        "token": "JWToken"
-    }
+{
+    "user": {
+        "id": "65das4dqwdqw84.qweoasd5412",
+        "name": "Nomo do usuário",
+        "email": "email@usuario.com",
+    },
+    "token": "JWToken"
+}
 ```
 
 ##### Erro ao tentar se autenticar. (code: 401)
 
 ```yaml
-    { 'error': 'Unauthorized.' }
+{ 
+    "error": "Unauthorized."
+}
 ```
