@@ -1,10 +1,9 @@
 # REST API do aplicativo DevCounts
 
-Esta API foi desenvolvida em `NodeJs`, e foi desenvolvida para a criação do APP DevCounts. 
+Esta API foi desenvolvida em `NodeJs`, e foi desenvolvida para a criação do APP **DevCounts**. 
 Com intuito de aprendizado e de gerenciamento das minhas contas.
 
-Os códigos fontes da API se encontram na pasta `/src`.
-
+Os códigos fontes da **API** se encontram na pasta `/src`.
 
 ## Intalação
 
@@ -30,14 +29,12 @@ Logo abaixo estão descritas as rotas da API.
 
 ## Rotas
 
-* [Authenticação]
-
-* [Listagem de Usuários]
-* [Cadastro de Usuários]
-
-* [Listagem de Contas]
-* [Cadastro de Contas]
-* [Listagem de Contas]
+* Authenticação
+* Listagem de Usuários
+* Cadastro de Usuários
+* Listagem de Contas
+* Cadastro de Contas
+* Listagem de Contas
 
 
 ## Autenticação
@@ -45,17 +42,16 @@ Logo abaixo estão descritas as rotas da API.
 ### Solicitação
 
 `POST /auth`
+```yaml
+{
+    "email": "exemple@hotmail.com", 
+    "password": "123456789"
+}
+```
 
-    {
-        "email": "exemple@hotmail.com", 
-        "password": "123456789"
-    }
+##### Solicitação bem sucedida.
 
-
-### Resposta
-
-#### Sucesso
-
+```yaml
     {
         "user": {
             "id": "65das4dqwdqw84.qweoasd5412",
@@ -64,9 +60,10 @@ Logo abaixo estão descritas as rotas da API.
         },
         "token": "JWToken"
     }
+```
 
-#### Erro ( 401 )
+##### Erro ao tentar se autenticar. (code: 401)
 
-    { 'error': 'Unauthorized.' } `#f03c15`
-
-    
+```yaml
+    { 'error': 'Unauthorized.' }
+```
